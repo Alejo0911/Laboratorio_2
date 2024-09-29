@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agenda interactiva de eventos con búsqueda, creación y eliminación de eventos">
+    <link rel="stylesheet" href="Estilización.css">
+    <title>Agenda de Eventos - Interactiva</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Agenda de Eventos</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section id="form-section" aria-label="Formulario para agregar eventos">
+            <form id="event-form" aria-labelledby="formulario-titulo">
+                <label for="event-title">Título del evento:</label>
+                <input type="text" id="event-title" placeholder= "Nombre del evento"  required aria-required="true">
+                
+                <label for="event-date">Fecha del evento:</label>
+                <input type="date" id="event-date" required aria-required="true">
+                
+                <button type="submit" aria-label="Agregar Evento">Agregar Evento</button>
+            </form>
+        </section>
+
+        <section id="events-container" aria-label="Listado de eventos">
+            <h2>Lista de Eventos</h2>
+            <ul id="events-list" aria-live="polite">
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="Interactividad.js"></script>
+</body>
+</html>
